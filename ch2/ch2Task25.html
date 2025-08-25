@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Your HTML Page</title>
+    <script>
+      // Which of these alerts are going to execute?
+
+      // What will the results of the expressions be inside if(...)?
+
+      if (-1 || 0) alert( 'first' );
+      if (-1 && 0) alert( 'second' );
+      if (null || -1 && 1) alert( 'third' );
+
+      // ANSWER the first and the third will execute
+      // FIRST: (-1 || 0) -1 is truthy and that will return true and run the alert
+      // SECOND: (-1 && 0) && return the last operand which is 0, i.e. falsy, alert will not run
+      // THIRD: (null || -1 && 1) && has a higher precedence, -1 && 1 = 1, and 1 is truthy, third will execute.
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
