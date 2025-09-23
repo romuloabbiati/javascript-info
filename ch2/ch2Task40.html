@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Your HTML Page</title>
+    <script>
+      // Rewrite with arrow functions
+      // Replace Function Expressions with arrow functions in the code below:
+
+      // ORIGINAL
+      // function ask(question, yes, no) {
+      //   if (confirm(question)) yes();
+      //   else no();
+      // }
+
+      // ask(
+      //   "Do you agree?",
+      //   function() { alert("You agreed."); },
+      //   function() { alert("You canceled the execution."); }
+      // );
+
+      // ANSWER
+      function ask(question, yes, no) {
+        if (confirm(question)) yes();
+        else no();
+      }
+
+      ask(
+        "Do you agree?",
+        () => alert("You agreed."),
+        () => alert("You canceled the execution.")
+      );
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
