@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Your HTML Page</title>
+    <script>
+      // Bad style
+
+      // What’s wrong with the code style below?
+
+      function pow(x,n) // no space between parameters
+      { // curly braces should be in the same line as the function 
+        // definition with a space to separate ) and {}
+        let result=1; // no space on the sides of =
+        for(let i=0;i<n;i++) {result*=x;}
+        // no space around =, and <. there should be a space after ;
+        // result*=x; statement should be in the line below
+        // there should be a space on both sides of *=
+        // the closing curly brace should be below result*=x;
+        return result; // there should be a vertical space 
+        // between the for loop and return statement
+      }
+
+      let x=prompt("x?",''), n=prompt("n?",'') // no space between =
+      // the type of quotes used, should be consistent, only one type 
+      // except in cases you need both.
+      // space after comma
+      // variable declarations are more readable when defined one 
+      // line for each. it should be let n = ... in the line below
+      if (n<=0) // there should be space around <=
+      { // it should be in the line above
+        alert(`Power ${n} is not supported, please enter an integer number greater than zero`);
+      } // the string above is too long. It should be splitted in at least 2
+      else // else should be in the same line as } and {
+      {
+        alert(pow(x,n)) // there should be a space around nested calls
+        // there should be a space after comma
+      }
+
+      // the fixed variant below: 
+      // function pow(x, n) {
+      //   let result = 1;
+
+      //   for(let i = 0; i < n; i++) {
+      //     result*=x;
+      //   }
+
+      //     return result;
+      //   }
+
+      //   let x = prompt("x?", "");
+      //   let n = prompt("n?", "");
+
+      //   if (n<=0) {
+      //     alert(`Power ${n} is not supported, 
+      //       please enter an integer number greater than zero`);
+      //   } else {
+      //     alert( pow(x, n) )
+      //   }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
