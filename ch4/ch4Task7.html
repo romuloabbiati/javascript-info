@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Your HTML Page</title>
+    <script>
+      // Chaining
+      // There’s a ladder object that allows you to go up and down:  
+
+      let ladder = {
+        step: 0,
+        up() {
+          this.step++;
+          return this;
+        },
+        down() {
+          this.step--;
+          return this;
+        },
+        showStep: function() {
+          alert( this.step );
+          return this;
+        }
+      };
+
+      // ladder.up(); // 1
+      // ladder.up(); // 2
+      // ladder.down(); // 1
+      // ladder.showStep(); // 1
+      // ladder.down(); // 0
+      // ladder.showStep(); // 0
+      ladder.up().up().down().showStep().down().showStep(); // shows 1 then 0
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
