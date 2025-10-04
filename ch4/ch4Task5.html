@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Your HTML Page</title>
+    <script>
+      // Using "this" in object literal
+      // Here the function makeUser returns an object.
+
+      // What is the result of accessing its ref? Why?
+
+      function makeUser() {
+        return {
+          name: "John",
+          ref: this,
+        };
+      }
+
+      let user = makeUser();
+      alert( user.ref.name ); 
+
+      // user.ref.name is the same as user.thisObject.name = John
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
