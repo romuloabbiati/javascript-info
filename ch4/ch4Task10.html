@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Your HTML Page</title>
+    <script>
+
+
+      let accumulator = new Accumulator(1);
+
+      accumulator.read();
+      accumulator.read();
+
+      alert(accumulator.value);
+
+      function Accumulator(startingValue) {
+        this.value = startingValue;
+
+        this.read = function() {
+          this.value += +prompt('Enter a value: ', 0);
+        }
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
