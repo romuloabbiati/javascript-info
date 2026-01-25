@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Chapter 5 Task 8</title>
+    <script>
+      /*
+      Uppercase the first character
+      Write a function ucFirst(str) that returns the string str with the uppercased first character, for instance:
+
+      ucFirst("john") == "John";
+
+      */
+
+      function ucFirst(str) {
+        if (!str) return str;
+        
+        return str[0].toUpperCase() + str.slice(1)
+      }
+
+      console.log(ucFirst('hello'));
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
