@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Chapter 5 Task 13</title>
+    <script>
+      // Array operations.
+
+      // Let’s try 5 array operations.
+
+      // Create an array styles with items “Jazz” and “Blues”.
+      const styles = ['Jazz', 'Blues'];
+      console.log('1', String(styles));
+      // Append “Rock-n-Roll” to the end.
+      styles.push('Rock-n-Roll');
+      console.log('2', String(styles));
+      // Replace the value in the middle with “Classics”. Your code for finding the middle value should work for any arrays with odd length.
+      styles[Math.floor((styles.length - 1) / 2)] = 'Classics';
+      console.log('3', String(styles));
+      // Strip off the first value of the array and show it.
+      alert( styles.shift() );
+      console.log('4', String(styles));
+      // Prepend Rap and Reggae to the array.
+      styles.unshift('Rap', 'Reggae');
+      console.log('5', String(styles));
+      // The array in the process:
+
+      // Jazz, Blues
+      // Jazz, Blues, Rock-n-Roll
+      // Jazz, Classics, Rock-n-Roll
+      // Classics, Rock-n-Roll
+      // Rap, Reggae, Classics, Rock-n-Roll
+
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
