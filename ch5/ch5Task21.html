@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Your HTML Page</title>
+    <script>
+
+      /*
+      OR
+      function copySorted(arr) {
+        return arr.slice().sort();
+      }
+      */
+
+      function copySorted(arr) {
+        let arrayCopy = [...arr];
+
+        arrayCopy.sort( (a, b) => a.localeCompare(b) );
+
+        return arrayCopy;
+      }
+
+      let arr = ['HTML', 'JavaScript', 'CSS'];
+
+      let sorted = copySorted(arr);
+
+      alert( sorted );
+      alert( arr );
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
